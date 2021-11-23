@@ -1,0 +1,82 @@
+.swiper-container {
+  @apply p-8;
+  width: 80vw;
+  height: 60vh;
+}
+
+.swiper-slide {
+  @apply text-left flex flex-col md:flex-row justify-center items-center gap-x-6 gap-y-6;
+  font-size: 1rem 'Manrope', sans-serif;
+  background: #fff;
+}
+
+.swiper-slide img {
+  @apply mx-auto block rounded-md;
+}
+
+.swiper-slide h6 {
+  @apply mr-4;
+}
+
+.swiper-slide .product-adv-text {
+  @apply ml-8 text-lg;
+}
+
+.swiper-slide .product-adv-text ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.swiper-slide .product-adv-text li::before {
+  content: '';
+  padding-right: 1.5rem;
+  background-image: url('../../images/check.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+}
+
+.swiper-button-prev {
+  left: -5px !important;
+  background-image: url('../../images/arrow-left.svg') !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
+.swiper-button-next {
+  right: -5px !important;
+  background-image: url('../../images/arrow-right.svg') !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination-bullets {
+  bottom: -5px !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-slide img {
+    width: 40%;
+  }
+}

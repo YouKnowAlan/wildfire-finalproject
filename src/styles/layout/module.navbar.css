@@ -1,0 +1,29 @@
+nav {
+  @apply border;
+}
+
+.text-brand {
+  @apply text-2xl font-semibold;
+  font-family: 'Inter', sans-serif;
+}
+
+.link {
+  @apply capitalize hidden md:block;
+}
+
+.mobileLink {
+  @apply text-black px-3 py-2 rounded-md text-sm font-medium;
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1f3a93;
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}

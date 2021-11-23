@@ -1,0 +1,7 @@
+footer {
+  @apply border;
+}
+
+p {
+  @apply flex flex-row justify-center p-4 items-center;
+}
