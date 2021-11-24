@@ -1,0 +1,14 @@
+.title-section {
+  @apply text-2xl font-semibold;
+  color: #fd7014;
+  font-family: 'Inter', sans-serif;
+  padding: 0 0.5rem;
+  border-left: 2px solid #fd7014;
+}
+
+.data-section {
+  @apply mx-auto rounded-lg;
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid #fd7014;
+}

@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav>
       <div className="flex flex-row items-center justify-between md:block md:max-w-7xl mx-auto pt-4 px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between h-16">
-          <h1 className="text-brand">Wildfire</h1>
+          <h1 className="text-brand text-primary">Wildfire</h1>
           <div>
             <div className="flex items-center space-x-8">
               <Link to="/" className="link">

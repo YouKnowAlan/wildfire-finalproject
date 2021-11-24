@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <AppLayout>
       <h2 className="title-jumbotron">
-        Little story about <b>Wildfire</b>
+        Little story about <b className="text-primary">Wildfire</b>
       </h2>
       <Carousel />
     </AppLayout>

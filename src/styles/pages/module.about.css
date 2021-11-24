@@ -1,0 +1,22 @@
+.title-section {
+  @apply text-2xl font-semibold;
+  color: #fd7014;
+  font-family: 'Inter', sans-serif;
+  padding: 0 0.5rem;
+  border-left: 2px solid #fd7014;
+}
+
+.qna-section {
+  @apply my-8 flex flex-col md:flex-row justify-between items-start;
+}
+
+.meeting-img {
+  @apply mx-auto;
+  max-width: 60vw;
+}
+
+@media (min-width: 768px) {
+  .meeting-img {
+    max-width: 40vw;
+  }
+}

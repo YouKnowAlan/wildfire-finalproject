@@ -20,8 +20,13 @@ nav {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #1f3a93;
+  background-color: #fd7014;
   transition: width 0.3s;
+}
+
+.link:hover {
+  color: #fd7014;
+  transition: color 0.3s;
 }
 
 .link:hover::after {

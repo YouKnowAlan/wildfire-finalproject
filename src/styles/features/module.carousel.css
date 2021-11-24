@@ -68,6 +68,10 @@
   bottom: -5px !important;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #fd7014 !important;
+}
+
 @media (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
