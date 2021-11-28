@@ -1,0 +1,78 @@
+.title-section {
+  @apply text-2xl font-semibold;
+  color: #fd7014;
+  font-family: 'Inter', sans-serif;
+  padding: 0 0.5rem;
+  border-left: 2px solid #fd7014;
+}
+
+.swiper-container {
+  @apply p-8;
+  width: 80vw;
+  height: 60vh;
+}
+
+.swiper-slide {
+  @apply text-left flex flex-col items-center font-semibold;
+  font-size: 1rem 'Manrope', sans-serif;
+  background: #fff;
+}
+
+.img-profile {
+  width: 10rem;
+  height: 10rem;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.profile-nama-nim p {
+  @apply p-2;
+}
+
+.social-media {
+  @apply flex flex-row justify-around mt-2;
+}
+
+.social-media-img {
+  @apply h-6 w-6 mx-4;
+}
+
+.swiper-button-prev {
+  left: -5px !important;
+  background-image: url('../../images/arrow-left.svg') !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
+.swiper-button-next {
+  right: -5px !important;
+  background-image: url('../../images/arrow-right.svg') !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination-bullets {
+  bottom: -5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fd7014 !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
