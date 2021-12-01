@@ -1,4 +1,4 @@
-.title-jumbotron {
+.title {
   @apply text-3xl text-center;
   font-family: 'Inter', sans-serif;
 }

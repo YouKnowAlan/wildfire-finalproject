@@ -1,0 +1,35 @@
+.titleSection {
+  @apply text-2xl font-semibold mb-10;
+  color: #fd7014;
+  font-family: 'Inter', sans-serif;
+  padding: 0 0.5rem;
+  border-left: 2px solid #fd7014;
+}
+
+.ourTeamProfile {
+  @apply grid grid-cols-2 gap-8 justify-items-center;
+}
+
+.personalProfile {
+  @apply rounded-md shadow-lg p-8;
+  min-width: 250px;
+}
+
+.personalImage {
+  @apply mx-auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+.personNamaNim p {
+  @apply p-2 font-semibold;
+  font-family: 'Manrope', sans-serif;
+}
+
+.socialMedia {
+  @apply flex flex-row justify-center mt-2;
+}
+
+.socialMediaImg {
+  @apply h-6 w-6 mx-4;
+}

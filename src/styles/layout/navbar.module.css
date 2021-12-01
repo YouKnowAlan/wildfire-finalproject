@@ -1,8 +1,4 @@
-nav {
-  @apply border;
-}
-
-.text-brand {
+.textBrand {
   @apply text-2xl font-semibold;
   font-family: 'Inter', sans-serif;
 }

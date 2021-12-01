@@ -10,7 +10,6 @@ module.exports = {
       baseSecondary: '#393E46',
       secondary: '#EEEEEE',
       gray: colors.coolGray,
-      sky: colors.lightBlue,
       black: colors.black,
       orange: colors.orange,
     },

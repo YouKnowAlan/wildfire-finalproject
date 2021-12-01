@@ -1,31 +1,31 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import '../../styles/layout/module.navbar.css';
+import navbar from '../../styles/layout/navbar.module.css';
 
 export default function Navbar() {
   const [isMobileMenuShowing, setisMobileMenuShowing] = useState(false);
 
   return (
-    <nav>
+    <nav className="border">
       <div className="flex flex-row items-center justify-between md:block md:max-w-7xl mx-auto pt-4 px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between h-16">
-          <h1 className="text-brand text-primary">Wildfire</h1>
+          <h1 className={`${navbar.textBrand} text-primary`}>FiDec</h1>
           <div>
             <div className="flex items-center space-x-8">
-              <Link to="/" className="link">
+              <Link to="/" className={navbar.link}>
                 home
               </Link>
-              <Link to="/report" className="link">
+              <Link to="/report" className={navbar.link}>
                 report
               </Link>
-              <Link to="/about" className="link">
+              <Link to="/about" className={navbar.link}>
                 about
               </Link>
             </div>
           </div>
 
-          <Link to="/contact" className="link">
+          <Link to="/contact" className={navbar.link}>
             contact
           </Link>
         </div>
@@ -86,19 +86,19 @@ export default function Navbar() {
       >
         <div className="md:hidden" id="mobile-menu">
           <div className="flex flex-row items-center justify-between px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" className="mobileLink">
+            <Link to="/" className={navbar.mobileLink}>
               Home
             </Link>
 
-            <Link to="/report" className="mobileLink">
+            <Link to="/report" className={navbar.mobileLink}>
               Report
             </Link>
 
-            <Link to="/about" className="mobileLink">
+            <Link to="/about" className={navbar.mobileLink}>
               About
             </Link>
 
-            <Link to="/contact" className="mobileLink">
+            <Link to="/contact" className={navbar.mobileLink}>
               Contact
             </Link>
           </div>

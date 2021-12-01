@@ -4,7 +4,7 @@ import SwiperCore, { Pagination, Navigation, Lazy } from 'swiper/core';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import '../../styles/features/module.carousel.css';
+import '../../styles/features/carousel.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/lazy/lazy.min.css';
 import 'swiper/components/navigation/navigation.min.css';
@@ -25,8 +25,6 @@ export default function Carousel() {
       navigation={true}
       pagination={{ clickable: true }}
       lazy={true}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
         <img src={wildfireimg1} alt="image-slider" />
